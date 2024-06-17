@@ -1,0 +1,8 @@
+<h1><%= @members_by_state.count %> Results</h1>
+<% @members_by_state.each do |member| %>
+  <ul class="member">
+    <li class="name"><%= member[:name] %></li>
+    <li class="party"><%= member[:partyName] %></li>
+    <li class="state"><%= member[:state] %></li>
+  </ul>
+<% end %>
